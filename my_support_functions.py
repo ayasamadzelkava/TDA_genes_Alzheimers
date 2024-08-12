@@ -333,8 +333,8 @@ def adjust_for_covariates_new(data_df, metadata_df, columns_to_exclude=None):
     X = sm.add_constant(X)
     for gene_index in data.index:
         Y = data.iloc[gene_index].values
-        #model = sm.RLM(Y, X, M=sm.robust.norms.HuberT()).fit()
-        model = sm.OLS(Y, X).fit()
+        model = sm.RLM(Y, X, M=sm.robust.norms.HuberT()).fit()
+        #model = sm.OLS(Y, X).fit()
         adjusted_data.iloc[gene_index] = model.resid  
         
     return adjusted_data

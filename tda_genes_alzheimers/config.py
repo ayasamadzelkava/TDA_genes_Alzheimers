@@ -10,3 +10,4 @@ data_dir = project_root_dir / 'data'
 raw_data_dir = data_dir / 'raw'
 
 gene_expression_data_path = raw_data_dir / 'GSE44772_series_matrix.txt'
+gene_meta_data_path = raw_data_dir / 'GPL4372.annot'

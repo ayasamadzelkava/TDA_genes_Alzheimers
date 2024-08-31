@@ -17,91 +17,6 @@ import matplotlib.pyplot as plt
 
 # PREPROCESSING
 
-def extract_meta_data_GSE33000(data):
-    '''
-    Extracting metadata for each patient [index, patient ID, age, sex, disease]
-    :param data:
-    :return:
-    '''
-    # Define mapping for gender and disease status
-    gender_mapping = {"female": 0, "male": 1}
-    disease_mapping = {"non-demented": 0, "Alzheimer's disease": 1, "Huntington's disease": 2}
-
-    # Initialize lists to hold the sample IDs, ages, genders, and disease statuses
-    sample_ids = []
-    ages = []
-    genders = []
-    disease_statuses = []
-
-    for sublist in data:
-        if sublist and sublist[0] == '!Sample_characteristics_ch2':
-            attribute_type = sublist[1].split(":")[0]
-
-            if attribute_type == 'age':
-                ages = [int(re.search('age: (\d+)', item).group(1)) if 'age: ' in item else -1 for item in sublist[1:]]
-            elif attribute_type == 'gender':
-                genders = [gender_mapping.get(re.search('gender: (\w+)', item).group(1), -1) if 'gender: ' in item else -1 for item in sublist[1:]]
-            elif attribute_type == 'disease status':
-                disease_statuses = [disease_mapping.get(re.search('disease status: (.*)', item).group(1), -1) if 'disease status: ' in item else -1 for item in sublist[1:]]
-        elif sublist and sublist[0] == '!Series_sample_id':
-            sample_ids = sublist[1].split(' ')
-
-    # Get the number of samples
-    num_samples = len(sample_ids)
-
-    # If any of the lists are shorter than num_samples, extend them with -1 or '' as appropriate
-    ages.extend([-1] * (num_samples - len(ages)))
-    genders.extend([-1] * (num_samples - len(genders)))
-    disease_statuses.extend([-1] * (num_samples - len(disease_statuses)))
-
-    # Combine the sample IDs, ages, genders, and disease statuses into the processed data
-    processed_data = [[i, sample_ids[i], ages[i], genders[i], disease_statuses[i]] for i in range(num_samples)]
-
-    return processed_data
-
-def adjust_for_covariates_GSE33000(expression_df, metadata):
-    """
-    Adjust the gene expression data for age and sex using linear regression.
-
-    Parameters:
-    - expression_df: DataFrame containing gene expression data where rows are genes and columns are samples.
-    - metadata: dataframe with metadata
-
-    Returns:
-    - DataFrame with adjusted gene expression data.
-    """
-    # Convert metadata into a DataFrame for easier manipulation
-    meta_df = metadata
-
-    # Ensure gender is coded numerically for regression
-    gender_mapping = {"female": 0, "male": 1}
-    meta_df["gender"] = meta_df["gender"].map(gender_mapping)
-
-    adjusted_data = expression_df.copy()
-
-    for sample in expression_df.columns:
-        sample_meta = meta_df[meta_df["participant_id"] == sample]
-
-        if not sample_meta.empty:
-            age = sample_meta["age"].values[0]
-            gender = sample_meta["gender"].values[0]
-
-            # Use age and gender as covariates
-            X = pd.DataFrame({"age": [age], "gender": [gender]})
-            X = sm.add_constant(X)  # Add a constant to the model (intercept)
-
-            y = expression_df[sample]
-
-            # Check for NaN or inf values in X and y
-            if not (X.isnull().values.any() or np.isinf(X.values).any() or y.isnull().values.any() or np.isinf(
-                    y.values).any()):
-                # Fit linear regression model
-                model = sm.OLS(y, X).fit()
-
-                # Get the residuals, which represent the adjusted data
-                adjusted_data[sample] = model.resid
-
-    return adjusted_data
 
 def extract_test_groups_GSE33000(data):
     disease_mapping = {"non-demented": 0, "Alzheimer's disease": 1, "Huntington's disease": 2}
@@ -270,48 +185,20 @@ def extract_metadata_GSE44772(data):
 
     return meta_df
 
-def adjust_for_covariates_GSE44772(df_GSE44772_interpolated, meta_data_GSE44772_df):
+def adjust_for_covariates(data_df, metadata_df, columns_to_exclude=None, adjust_using='RLM'):
     """
-    Adjust the gene expression data for covariates using linear regression.
+    Adjusts the input data for the effects of specified covariates using regression analysis.
+
     Parameters:
-    - df_GSE44772_interpolated: DataFrame containing gene expression data (rows: genes, columns: samples).
-    - meta_data_GSE44772: List of lists containing metadata for each sample.
+    - data_df (pd.DataFrame): structure: (rows genes/features, cols samples/subjects) Data to be adjusted.
+    - metadata_df (pd.DataFrame): Metadata containing covariates for adjustment. A DataFrame where rows correspond to the same samples as in `data_df`, 
+        and columns represent potential covariates (e.g., participant age, disease status). The index should match the sample identifiers used in `data_df` to ensure proper alignment between data and metadata.
+    - columns_to_exclude (list, optional): List of covariate names to exclude from adjustment.
+    - adjust_using (str, optional): Specifies the regression method for adjustment ('OLS' for Ordinary Least Squares or 'RLM' for Robust Linear Model).
+
     Returns:
-    - DataFrame with adjusted gene expression data.
+    - pd.DataFrame: Adjusted data with residuals after correction for covariates.
     """
-    meta_columns = meta_data_GSE44772_df.columns.tolist()
-    meta_df = meta_data_GSE44772_df
-
-    # Convert numeric metadata and map categorical variables
-    for col in ['pH', 'Age', 'RIN', 'Batch', 'PMI']:
-        meta_df[col] = pd.to_numeric(meta_df[col], errors='coerce')
-    meta_df['Gender'] = meta_df['Gender'].map({'M': 1, 'F': 0})
-    meta_df['Disease'] = meta_df['Disease'].map({'A': 1, 'N': 0})
-    meta_df['Brain Region'] = meta_df['Brain Region'].map({'cerebellum': 1, 'DLPFC': 0, 'visual cortex':2})
-    meta_df['Preservation Method'] = meta_df['Preservation Method'].map({'LNV': 1, 'Dry-ice': 0})
-
-    adjusted_data = df_GSE44772_interpolated.copy()
-
-    for sample in df_GSE44772_interpolated.columns:
-        sample_meta = meta_df[meta_df['Sample ID'] == sample]
-        if not sample_meta.empty:
-            # Selecting covariates and replicating for each gene
-            covariates = sample_meta[['Age', 'Gender', 'Brain Region']].iloc[0]
-            covariates_df = pd.DataFrame([covariates.values] * len(df_GSE44772_interpolated), columns=covariates.index)
-            X = sm.add_constant(covariates_df)  # Add a constant (intercept)
-
-            y = df_GSE44772_interpolated[sample]
-
-            # Check for NaN or inf in X and y
-            if not (X.isnull().values.any() or np.isinf(X.values).any() or y.isnull().values.any() or np.isinf(
-                    y.values).any()):
-                # Fit linear regression model
-                model = sm.OLS(y, X).fit()
-                adjusted_data[sample] = model.resid
-
-    return adjusted_data
-
-def adjust_for_covariates_new(data_df, metadata_df, columns_to_exclude=None):
     
     # load data
     data = data_df.copy()
@@ -333,8 +220,10 @@ def adjust_for_covariates_new(data_df, metadata_df, columns_to_exclude=None):
     X = sm.add_constant(X)
     for gene_index in data.index:
         Y = data.iloc[gene_index].values
-        model = sm.RLM(Y, X, M=sm.robust.norms.HuberT()).fit()
-        #model = sm.OLS(Y, X).fit()
+        if adjust_using == "RLM":
+            model = sm.RLM(Y, X, M=sm.robust.norms.HuberT()).fit()
+        if adjust_using == 'OLS': 
+            model = sm.OLS(Y, X).fit()
         adjusted_data.iloc[gene_index] = model.resid  
         
     return adjusted_data

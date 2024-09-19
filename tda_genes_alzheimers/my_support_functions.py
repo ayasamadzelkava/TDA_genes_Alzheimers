@@ -264,6 +264,44 @@ def convert_meta_to_numeric(metadata):
     return metadata, category_mappings
 
 
+def preprocess_data(df, num_metadata_df, F_gene_meta_df, interpolation_method='linear', existing_genes=True, most_variable_genes=True):
+    # 1
+    GSE44772_df_nonans = df.copy()
+    GSE44772_df_nonans.iloc[:, 1:] = df.iloc[:, 1:].replace([np.inf, -np.inf], np.nan)                 # Replace infinities with NaN
+    GSE44772_df_interpolated = GSE44772_df_nonans.copy()
+    GSE44772_df_interpolated.iloc[:, 1:] = GSE44772_df_nonans.iloc[:, 1:].interpolate(method=interpolation_method)          # Interpolate missing values
+    # 2
+    GSE44772_df_adjusted = GSE44772_df_interpolated.copy()
+    GSE44772_df_adjusted.iloc[:, 1:] = adjust_for_covariates(GSE44772_df_interpolated.iloc[:, 1:], num_metadata_df, columns_to_exclude=None)
+    # 3
+    F_gene_meta_df = F_gene_meta_df.iloc[:-1, :]                                                                #drop last '/end of table row'
+    if existing_genes==True:
+        no_nans_gene_df = F_gene_meta_df.loc[pd.notna(F_gene_meta_df['Gene symbol'])]
+        no_nans_gene_df['ID'] = pd.to_numeric(no_nans_gene_df['ID'], errors='coerce')                               # convert to numeric for comparison 
+        GSE44772_df_adjusted_no_nans = GSE44772_df_adjusted.loc[GSE44772_df_adjusted['ID_REF'].isin(no_nans_gene_df['ID']),:]
+        df_to_merge = GSE44772_df_adjusted_no_nans
+    else: df_to_merge = GSE44772_df_adjusted
+    # 4
+    merged_df = no_nans_gene_df[['ID', 'Gene symbol']].merge(df_to_merge, left_on='ID', right_on='ID_REF').reset_index(drop=True)  # attach gene symbol column
+    merged_df = merged_df.drop(['ID'], axis=1)
+    columns_to_aggregate = [col for col in merged_df.columns if col not in ['ID_REF', 'Gene symbol']]           # Columns to be included in the mean computation
+    merged_df_no_dups = merged_df.groupby('Gene symbol', as_index=False)[columns_to_aggregate].mean()           # Perform the groupby operation and compute the mean for the included columns
+    id_ref_df = merged_df.groupby('Gene symbol', as_index=False).first()[['Gene symbol', 'ID_REF']]             # Extract gene symbols and 1st ID_REFs from merged
+    merged_df_no_dups_plus_meta = pd.merge(id_ref_df, merged_df_no_dups, on='Gene symbol')                      # Attach back gene symbol and 1st ID_REF
+    # 5
+    if most_variable_genes==True:
+        preprocessed_df = merged_df_no_dups_plus_meta.copy().reset_index(drop=True).drop(['Gene symbol'], axis=1)
+        preprocessed_df = extract_most_variable_genes(preprocessed_df)      # formerly GSE44772_df_adjusted_hv   
+        preprocessed_gene_meta_df = merged_df_no_dups_plus_meta[merged_df_no_dups_plus_meta['ID_REF'].isin(preprocessed_df['ID_REF'])][['Gene symbol', 'ID_REF']]    # meta for preprocessed data        
+
+        df_to_return = preprocessed_df
+        gene_meta_df_to_return = preprocessed_gene_meta_df
+    else:
+        df_to_return = merged_df_no_dups_plus_meta
+        gene_meta_df_to_return = merged_df_no_dups_plus_meta
+        
+    return df_to_return, gene_meta_df_to_return
+
 # GO TERMS
 
 def extract_go_terms(file_path):

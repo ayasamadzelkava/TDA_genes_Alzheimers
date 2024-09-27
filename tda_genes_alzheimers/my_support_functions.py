@@ -263,7 +263,6 @@ def convert_meta_to_numeric(metadata):
 
     return metadata, category_mappings
 
-
 def preprocess_data(df, num_metadata_df, F_gene_meta_df, interpolation_method='linear', existing_genes=True, most_variable_genes=True):
     # 1
     GSE44772_df_nonans = df.copy()
@@ -350,7 +349,6 @@ def extract_go_terms(file_path):
 
     return go_bp, go_mf, go_cc
 
-
 def category_to_geneid_dict(gene_ids, go_annotations):
     """
     Categorize a list of genes based on their ontology descriptors.
@@ -375,7 +373,6 @@ def category_to_geneid_dict(gene_ids, go_annotations):
                 categorized_genes[go_term].append(str_gene_id)
 
     return categorized_genes
-
 
 def genes_in_categories_df(gene_ids, all_genes_dict):
     """

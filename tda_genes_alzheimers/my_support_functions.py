@@ -465,6 +465,24 @@ def get_graph_from_Adj_matrix(A, metadata_df, keep_nans=False):
 
 
 
+# EXPORT FOR GEPHI
+
+def export_graph_for_gephi(mapper_G, path_to_save, graph_name):
+    
+    G_nx = km.adapter.to_nx(mapper_G)
+    node_mapping = {node: index for index, node in enumerate(G_nx.nodes())}
+
+    # Rename nodes in the graph using their index
+    G_nx = nx.relabel_nodes(G_nx, node_mapping)
+    
+    for node in G_nx.nodes():
+        G_nx.nodes[node].clear()
+        
+    nx.write_gexf(G_nx, path_to_save / f'{graph_name}.gexf')
+
+
+
+
 
 # OLD SHIT
 

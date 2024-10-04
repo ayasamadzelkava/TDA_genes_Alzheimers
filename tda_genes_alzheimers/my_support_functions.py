@@ -301,6 +301,16 @@ def preprocess_data(df, num_metadata_df, F_gene_meta_df, interpolation_method='l
         
     return df_to_return, gene_meta_df_to_return
 
+
+# BRAIN REGIONS
+
+def get_correlation_for_group_BR(metadata_df, expression_df, disease_status, brain_region):
+    sample_IDs = metadata_df[(metadata_df['Disease'] == disease_status) & (metadata_df['Brain Region'] == brain_region)]['Sample ID'].tolist()
+    funct = expression_df.loc[:, ['ID_REF'] + sample_IDs]
+    corr = np.corrcoef(funct.iloc[:, 2:].values.astype(float))
+    return corr
+
+
 # GO TERMS
 
 def extract_go_terms(file_path):
@@ -349,64 +359,51 @@ def extract_go_terms(file_path):
 
     return go_bp, go_mf, go_cc
 
-def category_to_geneid_dict(gene_ids, go_annotations):
-    """
-    Categorize a list of genes based on their ontology descriptors.
+def get_go_for_existing_genes(preprocessed_gene_df, go_col_name, gene_meta_df):
+    # take only function for existing genes
+    pp_go_df = preprocessed_gene_df.copy()
 
-    Parameters:
-    - gene_ids: List of gene IDs to categorize.
-    - go_annotations: Dictionary of gene IDs to their associated GO terms.
+    # Ensure both columns are of the same type (convert both to string)
+    pp_go_df['ID_REF'] = pp_go_df['ID_REF'].astype(int)
+    gene_meta_df['ID'] = gene_meta_df['ID'].astype(int)
+
+    pp_go_df = pd.merge(pp_go_df, gene_meta_df[['ID', go_col_name]], left_on='ID_REF', right_on='ID', how='inner')
+    
+    return pp_go_df
+
+def get_numeric_go(go_df, go_col_name, numeric_col_name):
+    """extract first layer of complexity/go hierarchy and provide numerical version of go classes. attach numerical col to df
+
+    Args:
+        go_df (_type_): _description_
 
     Returns:
-    A dictionary where each key is a GO term and the value is a list of genes associated with that term.
+        _type_: _description_
     """
-    categorized_genes = {}
+    
+    # get first layer
+    go_df['layer 1'] = go_df[go_col_name].str.split('///').str[0]
+    
+    # create a column with processes as numerical values
+    go_df[numeric_col_name] = pd.factorize(go_df[go_col_name])[0]
+    
+    # take care of nans 
+    go_df[numeric_col_name] = go_df[numeric_col_name].replace(-1, np.nan) # conver missing to np version of nan
+    #pp_bp_df['GO:P_numeric'] = pp_bp_df['GO:P_numeric'].where(pp_bp_df['GO:P_numeric'].notna(), other=pd.NA)
+    
+    return go_df
 
-    for gene_id in gene_ids:
-        # Convert gene ID to string for matching
-        str_gene_id = str(gene_id)
-        # Check if the gene has GO annotations
-        if str_gene_id in go_annotations:
-            for go_term in go_annotations[str_gene_id]:
-                if go_term not in categorized_genes:
-                    categorized_genes[go_term] = []
-                categorized_genes[go_term].append(str_gene_id)
-
-    return categorized_genes
-
-def genes_in_categories_df(gene_ids, all_genes_dict):
-    """
-    gene_ids: list of data (ex: GSE33000) gene ids
-    all_genes_dict: (dict) from annotations file. keys - genes ids, values - categories that gene belongs to
-
-    Returns: a pandas DataFrame where each row corresponds to a gene from all_genes and each column
-    corresponds to a category (biological process).
-    Each cell in the DataFrame indicates whether the gene (specified by the row) belongs to the category
-    (specified by the column). 1 indicates the gene belongs to that category, and 0 indicates it does not.
-    """
-
-    this_category_to_geneid_dict = category_to_geneid_dict(gene_ids, all_genes_dict)
-
-    all_genes_str = [str(gene) for gene in gene_ids]
-    categories = sorted(this_category_to_geneid_dict.keys())
-
-    # Initialize an empty dictionary to hold our data
-    data = {category: [] for category in categories}
-
-    # Fill the dictionary with 1s and 0s, indicating gene presence in categories
-    for gene in all_genes_str:
-        for category in categories:
-            genes_in_category_str = [str(g) for g in this_category_to_geneid_dict[category]]
-            data[category].append(1 if gene in genes_in_category_str else 0)
-
-    # Create the DataFrame from the dictionary, using the gene names as the index
-    df = pd.DataFrame(data, index=all_genes_str)
-
-    return df
+def get_colors(go_type_df, numerical_go_col_name, colorscale):
+    
+    # Prepare for visualization
+    n_bins = go_type_df[numerical_go_col_name].nunique()
+    #cmap = plt.cm.colorscale
+    my_colorscale = [[i/n_bins, matplotlib.colors.to_hex(colorscale(i/n_bins))] for i in range(n_bins)]
+    
+    return my_colorscale
 
 
-
-#   COLOR
+#   COLOR AND VIZUALIZATION
 
 def get_cluster_labels_and_colorscale_GSE33000(graph, data):
     # DBSCAN clusters
@@ -421,6 +418,13 @@ def get_cluster_labels_and_colorscale_GSE33000(graph, data):
     colorscale = [[i/n_bins, matplotlib.colors.to_hex(cmap(i/n_bins))] for i in range(n_bins)]
 
     return cluster_labels, colorscale
+
+def get_gene_symbols_for_viz(F_gene_meta, pp_gene_meta):
+    # get gene symbols do display on visualization (instead of gene IDs)
+    F_gene_meta = F_gene_meta[:-1]
+    filtered_symbols = F_gene_meta[pd.to_numeric(F_gene_meta['ID']).isin(pp_gene_meta['ID_REF'])]['Gene symbol']
+    filtered_symbols_arr = np.array(filtered_symbols)
+    return filtered_symbols_arr
 
 
 

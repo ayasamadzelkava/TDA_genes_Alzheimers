@@ -305,9 +305,21 @@ def preprocess_data(df, num_metadata_df, F_gene_meta_df, interpolation_method='l
 # BRAIN REGIONS
 
 def get_correlation_for_group_BR(metadata_df, expression_df, disease_status, brain_region):
+    """
+    Calculate the correlation matrix for a specific group of samples based on disease status and brain region.
+    Args:
+        metadata_df (pd.DataFrame): DataFrame containing metadata with columns 'Disease', 'Brain Region', and 'Sample ID'.
+        expression_df (pd.DataFrame): DataFrame containing gene expression data with 'ID_REF' and sample IDs as columns.
+        disease_status (str): The disease status to filter the samples (e.g., 'Alzheimer's').
+        brain_region (str): The brain region to filter the samples (e.g., 'Hippocampus').
+    Returns:
+        np.ndarray: A 2D array representing the absolute correlation matrix of the filtered samples.
+    """
+    
     sample_IDs = metadata_df[(metadata_df['Disease'] == disease_status) & (metadata_df['Brain Region'] == brain_region)]['Sample ID'].tolist()
     funct = expression_df.loc[:, ['ID_REF'] + sample_IDs]
     corr = np.corrcoef(funct.iloc[:, 2:].values.astype(float))
+    corr = abs(corr)
     return corr
 
 

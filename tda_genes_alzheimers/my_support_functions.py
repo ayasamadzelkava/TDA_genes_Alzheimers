@@ -478,7 +478,6 @@ def get_graph_from_Adj_matrix(A, metadata_df, keep_nans=False):
 
 
 # EXPORT FOR GEPHI
-
 def export_graph_for_gephi(mapper_G, path_to_save, graph_name):
     
     G_nx = km.adapter.to_nx(mapper_G)
@@ -492,8 +491,79 @@ def export_graph_for_gephi(mapper_G, path_to_save, graph_name):
         
     nx.write_gexf(G_nx, path_to_save / f'{graph_name}.gexf')
 
+def export_nodes_for_gephi(mapper_G, path_to_save, nodes_name):
+    aggregation_functions = {
+        "mean": np.mean,
+        "max": np.max,
+        "std": np.std,
+        "median": np.median,
+        "nanmean": np.nanmean,
+        "nanmedian": lambda x: np.nanmedian(x),  # np.nanmedian might need lambda for some compatibility
+        "nanmax": np.nanmax,
+        "nanstd": np.nanstd
+    }
 
+    # Prepare a DataFrame to store the node color results
+    node_color_data = []
 
+    # Iterate through each node in the graph
+    for node_id, data_indices in mapper_G['nodes'].items():
+        # Extract the 'GO:P_numeric' values for the data points in this node
+        node_values = pp_bp_df.loc[data_indices, 'GO:P_numeric'].values
+
+        # Calculate the node colors based on aggregation functions
+        node_colors = {func_name: func(node_values) for func_name, func in aggregation_functions.items()}
+        
+        # Add node ID and calculated colors to the result
+        node_colors['Node ID'] = node_id
+        node_color_data.append(node_colors)
+
+    # Create a DataFrame with the node color results
+    node_color_df = pd.DataFrame(node_color_data)
+
+    # Convert the index into a column
+    node_color_df.reset_index(inplace=True)
+
+    # Rename the new column from 'index' to 'Label'
+    node_color_df.rename(columns={'index': 'Label'}, inplace=True)
+    
+    # Export the node_color_df DataFrame to a CSV file
+    node_color_df.to_csv(path_to_save / f'{nodes_name}.csv', index=False) 
+
+def export_nodes_for_gephi_DBSCAN(mapper_G, labels, path_to_save, nodes_name):
+    aggregation_functions = {
+        "mean": np.mean,
+        "max": np.max,
+        "std": np.std,
+        "median": np.median
+    }
+
+    # Prepare a DataFrame to store the node color results
+    node_color_data = []
+
+    # Iterate through each node in the graph
+    for node_id, data_indices in mapper_G['nodes'].items():
+        # Extract the 'GO:P_numeric' values for the data points in this node
+        node_values = labels[data_indices]
+
+        # Calculate the node colors based on aggregation functions
+        node_colors = {func_name: func(node_values) for func_name, func in aggregation_functions.items()}
+        
+        # Add node ID and calculated colors to the result
+        node_colors['Node ID'] = node_id
+        node_color_data.append(node_colors)
+
+    # Create a DataFrame with the node color results
+    node_color_df = pd.DataFrame(node_color_data)
+
+    # Convert the index into a column
+    node_color_df.reset_index(inplace=True)
+
+    # Rename the new column from 'index' to 'Label'
+    node_color_df.rename(columns={'index': 'Label'}, inplace=True)
+    
+    # Export the node_color_df DataFrame to a CSV file
+    node_color_df.to_csv(path_to_save / f'{nodes_name}.csv', index=False) 
 
 
 # OLD SHIT

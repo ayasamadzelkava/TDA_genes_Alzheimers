@@ -1,0 +1,749 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d1" for="node" attr.name="combined_score" attr.type="double" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="vascular associated smooth muscle cell development (GO:0097084)">
+      <data key="d0">GO_term</data>
+      <data key="d1">528.9976010351044</data>
+    </node>
+    <node id="EFEMP2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="RAMP2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="NOTCH1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="HEY2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="HES1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ENG">
+      <data key="d0">gene</data>
+    </node>
+    <node id="dopamine biosynthetic process (GO:0042416)">
+      <data key="d0">GO_term</data>
+      <data key="d1">225.90284168406265</data>
+    </node>
+    <node id="TGFB2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="DAO">
+      <data key="d0">gene</data>
+    </node>
+    <node id="GCH1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="SNCA">
+      <data key="d0">gene</data>
+    </node>
+    <node id="oxaloacetate metabolic process (GO:0006107)">
+      <data key="d0">GO_term</data>
+      <data key="d1">225.90284168406265</data>
+    </node>
+    <node id="MDH1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PCK1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="NIT2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="MDH1B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)">
+      <data key="d0">GO_term</data>
+      <data key="d1">97.19300201091647</data>
+    </node>
+    <node id="DAB2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="RSPO3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PLEKHA4">
+      <data key="d0">gene</data>
+    </node>
+    <node id="NKD1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="cellular response to UV-B (GO:0071493)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+    </node>
+    <node id="CDKN1A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="STK11">
+      <data key="d0">gene</data>
+    </node>
+    <node id="MME">
+      <data key="d0">gene</data>
+    </node>
+    <node id="HYAL3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CRIP1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="leukocyte aggregation (GO:0070486)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+    </node>
+    <node id="SEMA4D">
+      <data key="d0">gene</data>
+    </node>
+    <node id="BMP7">
+      <data key="d0">gene</data>
+    </node>
+    <node id="S100A9">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CD44">
+      <data key="d0">gene</data>
+    </node>
+    <node id="S100A8">
+      <data key="d0">gene</data>
+    </node>
+    <node id="positive regulation of apoptotic cell clearance (GO:2000427)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+    </node>
+    <node id="C4B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="C4A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CCL2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ABCA7">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CD300LF">
+      <data key="d0">gene</data>
+    </node>
+    <node id="vascular associated smooth muscle cell differentiation (GO:0035886)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+    </node>
+    <node id="venous blood vessel development (GO:0060841)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+    </node>
+    <node id="ACVRL1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="BMPR2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="FOXF1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PROX1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)">
+      <data key="d0">GO_term</data>
+      <data key="d1">63.277479649452374</data>
+    </node>
+    <node id="HEYL">
+      <data key="d0">gene</data>
+    </node>
+    <node id="SNAI1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)">
+      <data key="d0">GO_term</data>
+      <data key="d1">63.277479649452374</data>
+    </node>
+    <node id="SPEF1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="calcitonin family receptor signaling pathway (GO:0097646)">
+      <data key="d0">GO_term</data>
+      <data key="d1">56.91450135999957</data>
+    </node>
+    <node id="CALCRL">
+      <data key="d0">gene</data>
+    </node>
+    <node id="RAMP3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ADM">
+      <data key="d0">gene</data>
+    </node>
+    <node id="excitatory chemical synaptic transmission (GO:0098976)">
+      <data key="d0">GO_term</data>
+      <data key="d1">56.91450135999957</data>
+    </node>
+    <node id="GRIN2A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="GRIN2C">
+      <data key="d0">gene</data>
+    </node>
+    <node id="GRIN2B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PDLIM4">
+      <data key="d0">gene</data>
+    </node>
+    <node id="regulation of transforming growth factor beta1 production (GO:0032908)">
+      <data key="d0">GO_term</data>
+      <data key="d1">56.91450135999957</data>
+    </node>
+    <node id="LAPTM4B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ATP6AP2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="THBS1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="TSKU">
+      <data key="d0">gene</data>
+    </node>
+    <node id="cytoskeleton-dependent intracellular transport (GO:0030705)">
+      <data key="d0">GO_term</data>
+      <data key="d1">55.90249951451324</data>
+    </node>
+    <node id="CCDC88B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CCDC88A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="TUBA1C">
+      <data key="d0">gene</data>
+    </node>
+    <node id="TUBA1B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="TUBA1A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="MYO10">
+      <data key="d0">gene</data>
+    </node>
+    <node id="HOOK2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="KIF5B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="KIF5A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="KIF1B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="cellular response to testosterone stimulus (GO:0071394)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="AR">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ROCK2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="SPP1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="cellular response to vitamin D (GO:0071305)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="SFRP1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CYP24A1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PIM1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="chronic inflammatory response (GO:0002544)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="VNN1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="L-aspartate transmembrane transport (GO:0070778)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="SLC1A1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="SLC1A4">
+      <data key="d0">gene</data>
+    </node>
+    <node id="SLC1A5">
+      <data key="d0">gene</data>
+    </node>
+    <node id="positive regulation of amino acid transport (GO:0051957)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="SLC12A2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ARL6IP1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="TRH">
+      <data key="d0">gene</data>
+    </node>
+    <node id="positive regulation of gamma-delta T cell activation (GO:0046645)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="LEF1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="NOD2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="SOX4">
+      <data key="d0">gene</data>
+    </node>
+    <node id="positive regulation of protein catabolic process in the vacuole (GO:1904352)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="CD81">
+      <data key="d0">gene</data>
+    </node>
+    <node id="LRP2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="LDLR">
+      <data key="d0">gene</data>
+    </node>
+    <node id="postsynaptic endocytosis (GO:0140239)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="MX2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="MX1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="DNM2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="postsynaptic neurotransmitter receptor internalization (GO:0098884)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="protein localization to axon (GO:0099612)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="CNTNAP1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="EPB41L3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CNTN2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="regulation of integrin biosynthetic process (GO:0045113)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="response to acetylcholine (GO:1905144)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="CHRNA3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CHRNA7">
+      <data key="d0">gene</data>
+    </node>
+    <node id="short-term memory (GO:0007614)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="NPAS4">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CUX2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="T cell extravasation (GO:0072683)">
+      <data key="d0">GO_term</data>
+      <data key="d1">51.85622583356898</data>
+    </node>
+    <node id="F11R">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CD99">
+      <data key="d0">gene</data>
+    </node>
+    <node id="adherens junction assembly (GO:0034333)">
+      <data key="d0">GO_term</data>
+      <data key="d1">45.947506910234125</data>
+    </node>
+    <node id="ZNF703">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PIP5K1C">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ACTB">
+      <data key="d0">gene</data>
+    </node>
+    <node id="JAM3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="response to UV-B (GO:0010224)">
+      <data key="d0">GO_term</data>
+      <data key="d1">42.61318933971029</data>
+    </node>
+    <node id="IL12A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="benzene-containing compound metabolic process (GO:0042537)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="AADAT">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ACSM1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="CYP2E1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="KMO">
+      <data key="d0">gene</data>
+    </node>
+    <node id="dynamin family protein polymerization involved in membrane fission (GO:0003373)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="OPA1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="dynamin family protein polymerization involved in mitochondrial fission (GO:0003374)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="ER overload response (GO:0006983)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="GSK3B">
+      <data key="d0">gene</data>
+    </node>
+    <node id="WFS1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ATG10">
+      <data key="d0">gene</data>
+    </node>
+    <node id="TP53">
+      <data key="d0">gene</data>
+    </node>
+    <node id="mast cell activation involved in immune response (GO:0002279)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="CHGA">
+      <data key="d0">gene</data>
+    </node>
+    <node id="NR4A3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="S100A13">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PIK3CD">
+      <data key="d0">gene</data>
+    </node>
+    <node id="mast cell degranulation (GO:0043303)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="positive regulation of astrocyte differentiation (GO:0048711)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="BIN1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ID2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="regulation of apoptotic cell clearance (GO:2000425)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="regulation of extent of cell growth (GO:0061387)">
+      <data key="d0">GO_term</data>
+      <data key="d1">37.981460851116665</data>
+    </node>
+    <node id="ABL1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="APOE">
+      <data key="d0">gene</data>
+    </node>
+    <node id="cellular glucan metabolic process (GO:0006073)">
+      <data key="d0">GO_term</data>
+      <data key="d1">34.961293367746435</data>
+    </node>
+    <node id="PPP1R3C">
+      <data key="d0">gene</data>
+    </node>
+    <node id="GBE1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PHKA1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="PYGM">
+      <data key="d0">gene</data>
+    </node>
+    <node id="positive regulation of non-canonical Wnt signaling pathway (GO:2000052)">
+      <data key="d0">GO_term</data>
+      <data key="d1">34.961293367746435</data>
+    </node>
+    <node id="positive regulation of cardiac muscle hypertrophy (GO:0010613)">
+      <data key="d0">GO_term</data>
+      <data key="d1">30.07602107739984</data>
+    </node>
+    <node id="MEF2A">
+      <data key="d0">gene</data>
+    </node>
+    <node id="EDN1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="TRPC3">
+      <data key="d0">gene</data>
+    </node>
+    <node id="IGF1">
+      <data key="d0">gene</data>
+    </node>
+    <node id="AGT">
+      <data key="d0">gene</data>
+    </node>
+    <node id="activation of transmembrane receptor protein tyrosine kinase activity (GO:0007171)">
+      <data key="d0">GO_term</data>
+      <data key="d1">29.82117034222536</data>
+    </node>
+    <node id="PILRB">
+      <data key="d0">gene</data>
+    </node>
+    <node id="ADRB2">
+      <data key="d0">gene</data>
+    </node>
+    <node id="amylin receptor signaling pathway (GO:0097647)">
+      <data key="d0">GO_term</data>
+      <data key="d1">29.82117034222536</data>
+    </node>
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="EFEMP2" />
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="RAMP2" />
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="NOTCH1" />
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="HEY2" />
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="HES1" />
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="ENG" />
+    <edge source="EFEMP2" target="vascular associated smooth muscle cell differentiation (GO:0035886)" />
+    <edge source="RAMP2" target="vascular associated smooth muscle cell differentiation (GO:0035886)" />
+    <edge source="RAMP2" target="calcitonin family receptor signaling pathway (GO:0097646)" />
+    <edge source="RAMP2" target="adherens junction assembly (GO:0034333)" />
+    <edge source="RAMP2" target="amylin receptor signaling pathway (GO:0097647)" />
+    <edge source="NOTCH1" target="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)" />
+    <edge source="NOTCH1" target="positive regulation of astrocyte differentiation (GO:0048711)" />
+    <edge source="HEY2" target="vascular associated smooth muscle cell differentiation (GO:0035886)" />
+    <edge source="HEY2" target="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)" />
+    <edge source="HES1" target="vascular associated smooth muscle cell differentiation (GO:0035886)" />
+    <edge source="HES1" target="positive regulation of astrocyte differentiation (GO:0048711)" />
+    <edge source="ENG" target="vascular associated smooth muscle cell differentiation (GO:0035886)" />
+    <edge source="ENG" target="venous blood vessel development (GO:0060841)" />
+    <edge source="ENG" target="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)" />
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="TGFB2" />
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="DAO" />
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="GCH1" />
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="SNCA" />
+    <edge source="TGFB2" target="regulation of integrin biosynthetic process (GO:0045113)" />
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="MDH1" />
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="PCK1" />
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="NIT2" />
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="MDH1B" />
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="DAB2" />
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="RSPO3" />
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="PLEKHA4" />
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="NKD1" />
+    <edge source="DAB2" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)" />
+    <edge source="DAB2" target="positive regulation of non-canonical Wnt signaling pathway (GO:2000052)" />
+    <edge source="RSPO3" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)" />
+    <edge source="RSPO3" target="positive regulation of non-canonical Wnt signaling pathway (GO:2000052)" />
+    <edge source="PLEKHA4" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)" />
+    <edge source="PLEKHA4" target="positive regulation of non-canonical Wnt signaling pathway (GO:2000052)" />
+    <edge source="NKD1" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)" />
+    <edge source="NKD1" target="positive regulation of non-canonical Wnt signaling pathway (GO:2000052)" />
+    <edge source="cellular response to UV-B (GO:0071493)" target="CDKN1A" />
+    <edge source="cellular response to UV-B (GO:0071493)" target="STK11" />
+    <edge source="cellular response to UV-B (GO:0071493)" target="MME" />
+    <edge source="cellular response to UV-B (GO:0071493)" target="HYAL3" />
+    <edge source="cellular response to UV-B (GO:0071493)" target="CRIP1" />
+    <edge source="CDKN1A" target="response to UV-B (GO:0010224)" />
+    <edge source="STK11" target="response to UV-B (GO:0010224)" />
+    <edge source="MME" target="response to UV-B (GO:0010224)" />
+    <edge source="HYAL3" target="response to UV-B (GO:0010224)" />
+    <edge source="CRIP1" target="response to UV-B (GO:0010224)" />
+    <edge source="leukocyte aggregation (GO:0070486)" target="SEMA4D" />
+    <edge source="leukocyte aggregation (GO:0070486)" target="BMP7" />
+    <edge source="leukocyte aggregation (GO:0070486)" target="S100A9" />
+    <edge source="leukocyte aggregation (GO:0070486)" target="CD44" />
+    <edge source="leukocyte aggregation (GO:0070486)" target="S100A8" />
+    <edge source="S100A9" target="chronic inflammatory response (GO:0002544)" />
+    <edge source="S100A9" target="regulation of integrin biosynthetic process (GO:0045113)" />
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="C4B" />
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="C4A" />
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="CCL2" />
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="ABCA7" />
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="CD300LF" />
+    <edge source="C4B" target="regulation of apoptotic cell clearance (GO:2000425)" />
+    <edge source="C4A" target="regulation of apoptotic cell clearance (GO:2000425)" />
+    <edge source="CCL2" target="T cell extravasation (GO:0072683)" />
+    <edge source="CCL2" target="regulation of apoptotic cell clearance (GO:2000425)" />
+    <edge source="CD300LF" target="regulation of apoptotic cell clearance (GO:2000425)" />
+    <edge source="venous blood vessel development (GO:0060841)" target="ACVRL1" />
+    <edge source="venous blood vessel development (GO:0060841)" target="BMPR2" />
+    <edge source="venous blood vessel development (GO:0060841)" target="FOXF1" />
+    <edge source="venous blood vessel development (GO:0060841)" target="PROX1" />
+    <edge source="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)" target="HEYL" />
+    <edge source="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)" target="SNAI1" />
+    <edge source="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)" target="SPEF1" />
+    <edge source="calcitonin family receptor signaling pathway (GO:0097646)" target="CALCRL" />
+    <edge source="calcitonin family receptor signaling pathway (GO:0097646)" target="RAMP3" />
+    <edge source="calcitonin family receptor signaling pathway (GO:0097646)" target="ADM" />
+    <edge source="RAMP3" target="amylin receptor signaling pathway (GO:0097647)" />
+    <edge source="ADM" target="amylin receptor signaling pathway (GO:0097647)" />
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="GRIN2A" />
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="GRIN2C" />
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="GRIN2B" />
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="PDLIM4" />
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="LAPTM4B" />
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="ATP6AP2" />
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="THBS1" />
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="TSKU" />
+    <edge source="THBS1" target="chronic inflammatory response (GO:0002544)" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="CCDC88B" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="CCDC88A" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="TUBA1C" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="TUBA1B" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="TUBA1A" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="MYO10" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="HOOK2" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="KIF5B" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="KIF5A" />
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="KIF1B" />
+    <edge source="cellular response to testosterone stimulus (GO:0071394)" target="AR" />
+    <edge source="cellular response to testosterone stimulus (GO:0071394)" target="ROCK2" />
+    <edge source="cellular response to testosterone stimulus (GO:0071394)" target="SPP1" />
+    <edge source="AR" target="regulation of integrin biosynthetic process (GO:0045113)" />
+    <edge source="ROCK2" target="response to acetylcholine (GO:1905144)" />
+    <edge source="ROCK2" target="positive regulation of cardiac muscle hypertrophy (GO:0010613)" />
+    <edge source="cellular response to vitamin D (GO:0071305)" target="SFRP1" />
+    <edge source="cellular response to vitamin D (GO:0071305)" target="CYP24A1" />
+    <edge source="cellular response to vitamin D (GO:0071305)" target="PIM1" />
+    <edge source="SFRP1" target="positive regulation of non-canonical Wnt signaling pathway (GO:2000052)" />
+    <edge source="chronic inflammatory response (GO:0002544)" target="VNN1" />
+    <edge source="L-aspartate transmembrane transport (GO:0070778)" target="SLC1A1" />
+    <edge source="L-aspartate transmembrane transport (GO:0070778)" target="SLC1A4" />
+    <edge source="L-aspartate transmembrane transport (GO:0070778)" target="SLC1A5" />
+    <edge source="positive regulation of amino acid transport (GO:0051957)" target="SLC12A2" />
+    <edge source="positive regulation of amino acid transport (GO:0051957)" target="ARL6IP1" />
+    <edge source="positive regulation of amino acid transport (GO:0051957)" target="TRH" />
+    <edge source="positive regulation of gamma-delta T cell activation (GO:0046645)" target="LEF1" />
+    <edge source="positive regulation of gamma-delta T cell activation (GO:0046645)" target="NOD2" />
+    <edge source="positive regulation of gamma-delta T cell activation (GO:0046645)" target="SOX4" />
+    <edge source="positive regulation of protein catabolic process in the vacuole (GO:1904352)" target="CD81" />
+    <edge source="positive regulation of protein catabolic process in the vacuole (GO:1904352)" target="LRP2" />
+    <edge source="positive regulation of protein catabolic process in the vacuole (GO:1904352)" target="LDLR" />
+    <edge source="postsynaptic endocytosis (GO:0140239)" target="MX2" />
+    <edge source="postsynaptic endocytosis (GO:0140239)" target="MX1" />
+    <edge source="postsynaptic endocytosis (GO:0140239)" target="DNM2" />
+    <edge source="MX2" target="postsynaptic neurotransmitter receptor internalization (GO:0098884)" />
+    <edge source="MX2" target="dynamin family protein polymerization involved in membrane fission (GO:0003373)" />
+    <edge source="MX2" target="dynamin family protein polymerization involved in mitochondrial fission (GO:0003374)" />
+    <edge source="MX1" target="postsynaptic neurotransmitter receptor internalization (GO:0098884)" />
+    <edge source="MX1" target="dynamin family protein polymerization involved in membrane fission (GO:0003373)" />
+    <edge source="MX1" target="dynamin family protein polymerization involved in mitochondrial fission (GO:0003374)" />
+    <edge source="DNM2" target="postsynaptic neurotransmitter receptor internalization (GO:0098884)" />
+    <edge source="DNM2" target="dynamin family protein polymerization involved in membrane fission (GO:0003373)" />
+    <edge source="DNM2" target="dynamin family protein polymerization involved in mitochondrial fission (GO:0003374)" />
+    <edge source="DNM2" target="regulation of extent of cell growth (GO:0061387)" />
+    <edge source="protein localization to axon (GO:0099612)" target="CNTNAP1" />
+    <edge source="protein localization to axon (GO:0099612)" target="EPB41L3" />
+    <edge source="protein localization to axon (GO:0099612)" target="CNTN2" />
+    <edge source="response to acetylcholine (GO:1905144)" target="CHRNA3" />
+    <edge source="response to acetylcholine (GO:1905144)" target="CHRNA7" />
+    <edge source="CHRNA3" target="activation of transmembrane receptor protein tyrosine kinase activity (GO:0007171)" />
+    <edge source="CHRNA7" target="short-term memory (GO:0007614)" />
+    <edge source="short-term memory (GO:0007614)" target="NPAS4" />
+    <edge source="short-term memory (GO:0007614)" target="CUX2" />
+    <edge source="T cell extravasation (GO:0072683)" target="F11R" />
+    <edge source="T cell extravasation (GO:0072683)" target="CD99" />
+    <edge source="adherens junction assembly (GO:0034333)" target="ZNF703" />
+    <edge source="adherens junction assembly (GO:0034333)" target="PIP5K1C" />
+    <edge source="adherens junction assembly (GO:0034333)" target="ACTB" />
+    <edge source="adherens junction assembly (GO:0034333)" target="JAM3" />
+    <edge source="response to UV-B (GO:0010224)" target="IL12A" />
+    <edge source="benzene-containing compound metabolic process (GO:0042537)" target="AADAT" />
+    <edge source="benzene-containing compound metabolic process (GO:0042537)" target="ACSM1" />
+    <edge source="benzene-containing compound metabolic process (GO:0042537)" target="CYP2E1" />
+    <edge source="benzene-containing compound metabolic process (GO:0042537)" target="KMO" />
+    <edge source="dynamin family protein polymerization involved in membrane fission (GO:0003373)" target="OPA1" />
+    <edge source="OPA1" target="dynamin family protein polymerization involved in mitochondrial fission (GO:0003374)" />
+    <edge source="ER overload response (GO:0006983)" target="GSK3B" />
+    <edge source="ER overload response (GO:0006983)" target="WFS1" />
+    <edge source="ER overload response (GO:0006983)" target="ATG10" />
+    <edge source="ER overload response (GO:0006983)" target="TP53" />
+    <edge source="GSK3B" target="regulation of extent of cell growth (GO:0061387)" />
+    <edge source="GSK3B" target="cellular glucan metabolic process (GO:0006073)" />
+    <edge source="mast cell activation involved in immune response (GO:0002279)" target="CHGA" />
+    <edge source="mast cell activation involved in immune response (GO:0002279)" target="NR4A3" />
+    <edge source="mast cell activation involved in immune response (GO:0002279)" target="S100A13" />
+    <edge source="mast cell activation involved in immune response (GO:0002279)" target="PIK3CD" />
+    <edge source="CHGA" target="mast cell degranulation (GO:0043303)" />
+    <edge source="NR4A3" target="mast cell degranulation (GO:0043303)" />
+    <edge source="NR4A3" target="positive regulation of cardiac muscle hypertrophy (GO:0010613)" />
+    <edge source="S100A13" target="mast cell degranulation (GO:0043303)" />
+    <edge source="PIK3CD" target="mast cell degranulation (GO:0043303)" />
+    <edge source="positive regulation of astrocyte differentiation (GO:0048711)" target="BIN1" />
+    <edge source="positive regulation of astrocyte differentiation (GO:0048711)" target="ID2" />
+    <edge source="regulation of extent of cell growth (GO:0061387)" target="ABL1" />
+    <edge source="regulation of extent of cell growth (GO:0061387)" target="APOE" />
+    <edge source="cellular glucan metabolic process (GO:0006073)" target="PPP1R3C" />
+    <edge source="cellular glucan metabolic process (GO:0006073)" target="GBE1" />
+    <edge source="cellular glucan metabolic process (GO:0006073)" target="PHKA1" />
+    <edge source="cellular glucan metabolic process (GO:0006073)" target="PYGM" />
+    <edge source="positive regulation of cardiac muscle hypertrophy (GO:0010613)" target="MEF2A" />
+    <edge source="positive regulation of cardiac muscle hypertrophy (GO:0010613)" target="EDN1" />
+    <edge source="positive regulation of cardiac muscle hypertrophy (GO:0010613)" target="TRPC3" />
+    <edge source="positive regulation of cardiac muscle hypertrophy (GO:0010613)" target="IGF1" />
+    <edge source="positive regulation of cardiac muscle hypertrophy (GO:0010613)" target="AGT" />
+    <edge source="activation of transmembrane receptor protein tyrosine kinase activity (GO:0007171)" target="PILRB" />
+    <edge source="activation of transmembrane receptor protein tyrosine kinase activity (GO:0007171)" target="ADRB2" />
+  </graph>
+</graphml>

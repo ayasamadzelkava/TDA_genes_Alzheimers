@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="color" attr.type="string" />
+  <key id="d4" for="node" attr.name="size" attr.type="double" />
+  <key id="d3" for="node" attr.name="color" attr.type="string" />
+  <key id="d2" for="node" attr.name="size" attr.type="long" />
+  <key id="d1" for="node" attr.name="combined_score" attr.type="double" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="vascular associated smooth muscle cell development (GO:0097084)">
+      <data key="d0">GO_term</data>
+      <data key="d1">528.9976010351044</data>
+      <data key="d2">100</data>
+      <data key="d3">#98df8a</data>
+    </node>
+    <node id="EFEMP2">
+      <data key="d0">gene</data>
+      <data key="d2">30</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="RAMP2">
+      <data key="d0">gene</data>
+      <data key="d2">40</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="NOTCH1">
+      <data key="d0">gene</data>
+      <data key="d2">30</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="HEY2">
+      <data key="d0">gene</data>
+      <data key="d2">40</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="HES1">
+      <data key="d0">gene</data>
+      <data key="d2">30</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="ENG">
+      <data key="d0">gene</data>
+      <data key="d2">50</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="dopamine biosynthetic process (GO:0042416)">
+      <data key="d0">GO_term</data>
+      <data key="d1">225.90284168406265</data>
+      <data key="d2">100</data>
+      <data key="d3">#bcbd22</data>
+    </node>
+    <node id="TGFB2">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="DAO">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="GCH1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="SNCA">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="oxaloacetate metabolic process (GO:0006107)">
+      <data key="d0">GO_term</data>
+      <data key="d1">225.90284168406265</data>
+      <data key="d2">100</data>
+      <data key="d3">#ff9896</data>
+    </node>
+    <node id="MDH1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="PCK1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="NIT2">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="MDH1B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)">
+      <data key="d0">GO_term</data>
+      <data key="d1">97.19300201091647</data>
+      <data key="d4">48.59650100545824</data>
+      <data key="d3">#17becf</data>
+    </node>
+    <node id="DAB2">
+      <data key="d0">gene</data>
+      <data key="d2">30</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="RSPO3">
+      <data key="d0">gene</data>
+      <data key="d2">30</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="PLEKHA4">
+      <data key="d0">gene</data>
+      <data key="d2">30</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="NKD1">
+      <data key="d0">gene</data>
+      <data key="d2">30</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="cellular response to UV-B (GO:0071493)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+      <data key="d4">46.84882168060292</data>
+      <data key="d3">#dbdb8d</data>
+    </node>
+    <node id="CDKN1A">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="STK11">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="MME">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="HYAL3">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="CRIP1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="leukocyte aggregation (GO:0070486)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+      <data key="d4">46.84882168060292</data>
+      <data key="d3">#ff9896</data>
+    </node>
+    <node id="SEMA4D">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="BMP7">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="S100A9">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="CD44">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="S100A8">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="positive regulation of apoptotic cell clearance (GO:2000427)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+      <data key="d4">46.84882168060292</data>
+      <data key="d3">#ff9896</data>
+    </node>
+    <node id="C4B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="C4A">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="CCL2">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="ABCA7">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="CD300LF">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="vascular associated smooth muscle cell differentiation (GO:0035886)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+      <data key="d4">46.84882168060292</data>
+      <data key="d3">#e377c2</data>
+    </node>
+    <node id="venous blood vessel development (GO:0060841)">
+      <data key="d0">GO_term</data>
+      <data key="d1">93.69764336120583</data>
+      <data key="d4">46.84882168060292</data>
+      <data key="d3">#c5b0d5</data>
+    </node>
+    <node id="ACVRL1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="BMPR2">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="FOXF1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="PROX1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)">
+      <data key="d0">GO_term</data>
+      <data key="d1">63.277479649452374</data>
+      <data key="d4">31.638739824726187</data>
+      <data key="d3">#c7c7c7</data>
+    </node>
+    <node id="HEYL">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="SNAI1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)">
+      <data key="d0">GO_term</data>
+      <data key="d1">63.277479649452374</data>
+      <data key="d4">31.638739824726187</data>
+      <data key="d3">#ff7f0e</data>
+    </node>
+    <node id="SPEF1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="calcitonin family receptor signaling pathway (GO:0097646)">
+      <data key="d0">GO_term</data>
+      <data key="d1">56.91450135999957</data>
+      <data key="d4">28.457250679999785</data>
+      <data key="d3">#ff9896</data>
+    </node>
+    <node id="CALCRL">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="RAMP3">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="ADM">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="excitatory chemical synaptic transmission (GO:0098976)">
+      <data key="d0">GO_term</data>
+      <data key="d1">56.91450135999957</data>
+      <data key="d4">28.457250679999785</data>
+      <data key="d3">#9edae5</data>
+    </node>
+    <node id="GRIN2A">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="GRIN2C">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="GRIN2B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="PDLIM4">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="regulation of transforming growth factor beta1 production (GO:0032908)">
+      <data key="d0">GO_term</data>
+      <data key="d1">56.91450135999957</data>
+      <data key="d4">28.457250679999785</data>
+      <data key="d3">#17becf</data>
+    </node>
+    <node id="LAPTM4B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="ATP6AP2">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="THBS1">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="TSKU">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="cytoskeleton-dependent intracellular transport (GO:0030705)">
+      <data key="d0">GO_term</data>
+      <data key="d1">55.90249951451324</data>
+      <data key="d4">27.95124975725662</data>
+      <data key="d3">#ffbb78</data>
+    </node>
+    <node id="CCDC88B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="CCDC88A">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="TUBA1C">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="TUBA1B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="TUBA1A">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="MYO10">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="HOOK2">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="KIF5B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="KIF5A">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <node id="KIF1B">
+      <data key="d0">gene</data>
+      <data key="d2">20</data>
+      <data key="d3">#90ee90</data>
+    </node>
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="EFEMP2">
+      <data key="d5">#98df8a</data>
+    </edge>
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="RAMP2">
+      <data key="d5">#98df8a</data>
+    </edge>
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="NOTCH1">
+      <data key="d5">#98df8a</data>
+    </edge>
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="HEY2">
+      <data key="d5">#98df8a</data>
+    </edge>
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="HES1">
+      <data key="d5">#98df8a</data>
+    </edge>
+    <edge source="vascular associated smooth muscle cell development (GO:0097084)" target="ENG">
+      <data key="d5">#98df8a</data>
+    </edge>
+    <edge source="EFEMP2" target="vascular associated smooth muscle cell differentiation (GO:0035886)">
+      <data key="d5">#e377c2</data>
+    </edge>
+    <edge source="RAMP2" target="vascular associated smooth muscle cell differentiation (GO:0035886)">
+      <data key="d5">#e377c2</data>
+    </edge>
+    <edge source="RAMP2" target="calcitonin family receptor signaling pathway (GO:0097646)">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="NOTCH1" target="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)">
+      <data key="d5">#c7c7c7</data>
+    </edge>
+    <edge source="HEY2" target="vascular associated smooth muscle cell differentiation (GO:0035886)">
+      <data key="d5">#e377c2</data>
+    </edge>
+    <edge source="HEY2" target="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)">
+      <data key="d5">#c7c7c7</data>
+    </edge>
+    <edge source="HES1" target="vascular associated smooth muscle cell differentiation (GO:0035886)">
+      <data key="d5">#e377c2</data>
+    </edge>
+    <edge source="ENG" target="vascular associated smooth muscle cell differentiation (GO:0035886)">
+      <data key="d5">#e377c2</data>
+    </edge>
+    <edge source="ENG" target="venous blood vessel development (GO:0060841)">
+      <data key="d5">#c5b0d5</data>
+    </edge>
+    <edge source="ENG" target="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)">
+      <data key="d5">#c7c7c7</data>
+    </edge>
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="TGFB2">
+      <data key="d5">#bcbd22</data>
+    </edge>
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="DAO">
+      <data key="d5">#bcbd22</data>
+    </edge>
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="GCH1">
+      <data key="d5">#bcbd22</data>
+    </edge>
+    <edge source="dopamine biosynthetic process (GO:0042416)" target="SNCA">
+      <data key="d5">#bcbd22</data>
+    </edge>
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="MDH1">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="PCK1">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="NIT2">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="oxaloacetate metabolic process (GO:0006107)" target="MDH1B">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="DAB2">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="RSPO3">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="PLEKHA4">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="positive regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000096)" target="NKD1">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="DAB2" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)">
+      <data key="d5">#ff7f0e</data>
+    </edge>
+    <edge source="RSPO3" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)">
+      <data key="d5">#ff7f0e</data>
+    </edge>
+    <edge source="PLEKHA4" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)">
+      <data key="d5">#ff7f0e</data>
+    </edge>
+    <edge source="NKD1" target="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)">
+      <data key="d5">#ff7f0e</data>
+    </edge>
+    <edge source="cellular response to UV-B (GO:0071493)" target="CDKN1A">
+      <data key="d5">#dbdb8d</data>
+    </edge>
+    <edge source="cellular response to UV-B (GO:0071493)" target="STK11">
+      <data key="d5">#dbdb8d</data>
+    </edge>
+    <edge source="cellular response to UV-B (GO:0071493)" target="MME">
+      <data key="d5">#dbdb8d</data>
+    </edge>
+    <edge source="cellular response to UV-B (GO:0071493)" target="HYAL3">
+      <data key="d5">#dbdb8d</data>
+    </edge>
+    <edge source="cellular response to UV-B (GO:0071493)" target="CRIP1">
+      <data key="d5">#dbdb8d</data>
+    </edge>
+    <edge source="leukocyte aggregation (GO:0070486)" target="SEMA4D">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="leukocyte aggregation (GO:0070486)" target="BMP7">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="leukocyte aggregation (GO:0070486)" target="S100A9">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="leukocyte aggregation (GO:0070486)" target="CD44">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="leukocyte aggregation (GO:0070486)" target="S100A8">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="C4B">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="C4A">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="CCL2">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="ABCA7">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="positive regulation of apoptotic cell clearance (GO:2000427)" target="CD300LF">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="venous blood vessel development (GO:0060841)" target="ACVRL1">
+      <data key="d5">#c5b0d5</data>
+    </edge>
+    <edge source="venous blood vessel development (GO:0060841)" target="BMPR2">
+      <data key="d5">#c5b0d5</data>
+    </edge>
+    <edge source="venous blood vessel development (GO:0060841)" target="FOXF1">
+      <data key="d5">#c5b0d5</data>
+    </edge>
+    <edge source="venous blood vessel development (GO:0060841)" target="PROX1">
+      <data key="d5">#c5b0d5</data>
+    </edge>
+    <edge source="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)" target="HEYL">
+      <data key="d5">#c7c7c7</data>
+    </edge>
+    <edge source="epithelial to mesenchymal transition involved in endocardial cushion formation (GO:0003198)" target="SNAI1">
+      <data key="d5">#c7c7c7</data>
+    </edge>
+    <edge source="regulation of Wnt signaling pathway, planar cell polarity pathway (GO:2000095)" target="SPEF1">
+      <data key="d5">#ff7f0e</data>
+    </edge>
+    <edge source="calcitonin family receptor signaling pathway (GO:0097646)" target="CALCRL">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="calcitonin family receptor signaling pathway (GO:0097646)" target="RAMP3">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="calcitonin family receptor signaling pathway (GO:0097646)" target="ADM">
+      <data key="d5">#ff9896</data>
+    </edge>
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="GRIN2A">
+      <data key="d5">#9edae5</data>
+    </edge>
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="GRIN2C">
+      <data key="d5">#9edae5</data>
+    </edge>
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="GRIN2B">
+      <data key="d5">#9edae5</data>
+    </edge>
+    <edge source="excitatory chemical synaptic transmission (GO:0098976)" target="PDLIM4">
+      <data key="d5">#9edae5</data>
+    </edge>
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="LAPTM4B">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="ATP6AP2">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="THBS1">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="regulation of transforming growth factor beta1 production (GO:0032908)" target="TSKU">
+      <data key="d5">#17becf</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="CCDC88B">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="CCDC88A">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="TUBA1C">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="TUBA1B">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="TUBA1A">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="MYO10">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="HOOK2">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="KIF5B">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="KIF5A">
+      <data key="d5">#ffbb78</data>
+    </edge>
+    <edge source="cytoskeleton-dependent intracellular transport (GO:0030705)" target="KIF1B">
+      <data key="d5">#ffbb78</data>
+    </edge>
+  </graph>
+</graphml>
